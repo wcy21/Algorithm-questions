@@ -10,7 +10,6 @@ int mem[107][1007];
 int dfs(int pos, int tleft) {
 	if (mem[pos][tleft] != -1)
 		return mem[pos][tleft];
-
 	if (pos == M)
 		return mem[pos][tleft] = 0;
 
