@@ -25,7 +25,7 @@ struct step {
 
 int fact[10] = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 };
 
-int puzzle[9];
+int puzzle[10];
 
 int dx[4] = { 0, 1, 0, -1 };
 int dy[4] = { 1, 0, -1, 0 };
