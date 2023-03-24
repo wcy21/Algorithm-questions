@@ -95,21 +95,17 @@ int main() {
     bfs();
 
     char c;
-    int pos, hashs;
+    int hashs;
     while (cin >> c) {
-        if (c == 'x') {
-            pos = 0;
+        if (c == 'x')
             puzzle[0] = 0;
-        }
         else
             puzzle[0] = c - '0';
 
         for (int i = 1; i < 9; ++i) {
             cin >> c;
-            if (c == 'x') {
-                pos = 0;
+            if (c == 'x')
                 puzzle[i] = 0;
-            }
             else
                 puzzle[i] = c - '0';
         }
