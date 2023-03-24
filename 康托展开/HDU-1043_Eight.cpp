@@ -23,8 +23,6 @@ struct step {
     int pre;
 }steps[MAXN];
 
-bool vis[MAXN];
-
 int fact[10] = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 };
 
 int puzzle[9];
