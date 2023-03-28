@@ -54,10 +54,9 @@ string quotient(string x, int y) {
 int main() {
     int n;
     cin >> n;
-    for (int i = 0; i <= n; ++i) {
+    for (int i = 0; i <= n; ++i)
         cin >> a[i].l >> a[i].r;
-    }
-
+	
     sort(a + 1, a + n + 1);
 
     string ans, tmp;
