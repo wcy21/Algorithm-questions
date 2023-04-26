@@ -4,6 +4,7 @@
 using namespace std;
 
 const int N = 20007;
+
 int f[N], g[N], q[N];
 int n, W;
 
@@ -21,7 +22,7 @@ int main() {
                 while (head <= tail && g[q[tail]] - (q[tail] - j) / w * v <= g[k] - (k - j) / w * v)
                     --tail; 
                 if (head <= tail)
-                    f[k] = max(f[k], g[q[k]] + (k - q[head]) / w * v);
+                    f[k] = max(f[k], g[q[head]] + (k - q[head]) / w * v);
                 q[++tail] = k;
             }
         }
